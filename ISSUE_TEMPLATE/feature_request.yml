@@ -1,0 +1,46 @@
+name: Feature request
+description: Suggest an idea for VitaeFlow
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea? We'd love to hear it. Focus on the **problem** you're trying to solve — it helps us find the best solution.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem does this feature solve? What's frustrating or missing?
+      placeholder: "I'm trying to ... but there's no way to ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How do you think this could work? API sketches, CLI flags, or rough ideas are all welcome.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you tried any workarounds or alternative approaches?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Which part of VitaeFlow?
+      options:
+        - SDK (@vitaeflow/sdk)
+        - CLI (vitaeflow)
+        - Specification (schema)
+        - Website
+        - Other
+    validations:
+      required: true
